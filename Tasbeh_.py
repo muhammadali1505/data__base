@@ -1,24 +1,3 @@
-# from tkinter import *
-#
-# root = Tk()
-# count = 0
-#
-# def onClickButtoncount():
-#     global count
-#     count+=1
-#     if count==33:
-#         con
-#     print(count)
-#
-# button1 = Button(root, text='Clik 1', bg='red',command=onClickButtoncount)
-# button1.pack()
-#
-# root.mainloop()
-#
-#⭕
-
-
-
 from tkinter import *
 root = Tk()
 root.config(bg="black")
