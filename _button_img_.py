@@ -18,16 +18,17 @@ def n():
     label1.config(image=NewImage3)
 
 
+
 label = Label(root, image=NewImage)
 label.pack()
 label1 = Label(root, image=NewImage2)
 label1.pack()
 
 
-btn = Button(root, text='>', bg='green', command=n)
-btn.pack()
-btn1 = Button(root, text='<', bg='green', command=n)
-btn1.pack()
+btn = Button(root, text='>', bg='grey', command=n)
+btn.pack(side=RIGHT)
+btn1 = Button(root, text='<', bg='grey', command=n)
+btn1.pack(side=LEFT)
 
 
 root.mainloop()
