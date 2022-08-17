@@ -38,14 +38,14 @@
 
 
 
-
-from tkinter import *
-window = Tk()
-window.title('Window')
-window.iconbitmap('Lambda.png')
-window.geometry("350x250")
-window.resizable(False, False)
-# window.config(background='grey')
-window.config(bg='red')
-
-window.mainloop()
+#
+# from tkinter import *
+# window = Tk()
+# window.title('Window')
+# window.iconbitmap('Lambda.png')
+# window.geometry("350x250")
+# window.resizable(False, False)
+# # window.config(background='grey')
+# window.config(bg='red')
+#
+# window.mainloop()
