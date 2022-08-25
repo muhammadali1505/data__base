@@ -29,6 +29,7 @@ def open_file():
 
 
 root = Tk()
+
 root.title("file creator")
 root.geometry("550x350")
 label = LabelFrame(text="Actions")
