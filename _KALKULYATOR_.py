@@ -1,6 +1,6 @@
 from tkinter import *
 root = Tk()
-root.config(bg="white")
+root.config(bg="grey")
 
 ishora = ''
 firstNum = ''
@@ -46,28 +46,28 @@ def result():
         entry.insert(0, f"{int(firstNum)-int(newNum)}")
 
 entry = Entry(root, width=25, font=('consolas', 24))
-backSpace = Button(root, text='C', font=('consolas', 24),
+backSpace = Button(root, text='C', font=('consolas', 24),bg='yellow',
                    command=lambda : entry.delete(len(entry.get())-1, END))
-point = Button(root, text='P', font=('consolas', 24), command=lambda : entry.delete(0, END))
-devide = Button(root, text='/', font=('consolas', 24), command=dev)
-multiply = Button(root, text='*', font=('consolas', 24),command=ast)
-minus = Button(root, text='-', font=('consolas', 24),command=subtract)
-plus = Button(root, text='+',font=('consolas', 24),command=plus)
-equel = Button(root, text='=', font=('consolas', 24), command=result)
+point = Button(root, text='P', font=('consolas', 24),bg='yellow', command=lambda : entry.delete(0, END))
+devide = Button(root, text='/', font=('consolas', 24),bg='yellow', command=dev)
+multiply = Button(root, text='*', font=('consolas', 24),bg='yellow',command=ast)
+minus = Button(root, text='-', font=('consolas', 24),bg='yellow',command=subtract)
+plus = Button(root, text='+',font=('consolas', 24),bg='yellow',command=plus)
+equel = Button(root, text='=', font=('consolas', 24),bg='yellow', command=result)
 
 
 
-btn1 = Button(root, text=1, font=('consolas', 24), command=lambda : cal(1))
-btn2 = Button(root, text=2, font=('consolas', 24), command=lambda : cal(2))
-btn3 = Button(root, text=3, font=('consolas', 24), command=lambda : cal(3))
-btn4 = Button(root, text=4, font=('consolas', 24), command=lambda : cal(4))
-btn5 = Button(root, text=5, font=('consolas', 24), command=lambda : cal(5))
-btn6 = Button(root, text=6, font=('consolas', 24), command=lambda : cal(6))
-btn7 = Button(root, text=7, font=('consolas', 24), command=lambda : cal(7))
-btn8 = Button(root, text=8, font=('consolas', 24), command=lambda : cal(8))
-btn9 = Button(root, text=9, font=('consolas', 24), command=lambda : cal(9))
-btn0 = Button(root, text=0, font=('consolas', 24), command=lambda : cal(0))
-# btn00= Button(root, text=00,font=('consolas', 24), command=lambda : cal(00))
+btn1 = Button(root, text=1, font=('consolas', 24),bg='yellow',command=lambda : cal(1))
+btn2 = Button(root, text=2, font=('consolas', 24),bg='yellow', command=lambda : cal(2))
+btn3 = Button(root, text=3, font=('consolas', 24),bg='yellow', command=lambda : cal(3))
+btn4 = Button(root, text=4, font=('consolas', 24),bg='yellow', command=lambda : cal(4))
+btn5 = Button(root, text=5, font=('consolas', 24),bg='yellow', command=lambda : cal(5))
+btn6 = Button(root, text=6, font=('consolas', 24),bg='yellow', command=lambda : cal(6))
+btn7 = Button(root, text=7, font=('consolas', 24),bg='yellow', command=lambda : cal(7))
+btn8 = Button(root, text=8, font=('consolas', 24),bg='yellow', command=lambda : cal(8))
+btn9 = Button(root, text=9, font=('consolas', 24),bg='yellow', command=lambda : cal(9))
+btn0 = Button(root, text=0, font=('consolas', 24),bg='yellow', command=lambda : cal(0))
+# btn00= Button(root, text=00,font=('consolas', 24),bg='yellow', command=lambda : cal(00))
 
 entry.grid(row=0, column=0, columnspan=4, pady=15, padx=15)
 backSpace.grid(row=1, column=0)
@@ -87,7 +87,7 @@ btn6.grid(row=3, column=2)
 btn7.grid(row=4, column=0)
 btn8.grid(row=4, column=1)
 btn9.grid(row=4, column=2)
-btn0.grid(row=5, column=0)
+btn0.grid(row=5, column=1)
 # btn00.grid(row=5,column=1)
 
 equel.grid(row=5, column=3, columnspan=2)
